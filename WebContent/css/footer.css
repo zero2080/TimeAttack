@@ -1,0 +1,42 @@
+@charset "UTF-8";
+#footer{
+	margin:0;
+	padding:0;
+	
+}
+
+footer #wrap{
+	margin:0 auto;
+	font-family:sans-serif;
+	width:1200px;
+}
+footer #nav{
+	float:left;
+	width:33%;
+	height:130px;
+}
+footer h3{
+	margin:5px 10px;
+}
+footer #corp{
+	float:right;
+	width:33%;
+	height:130px;
+}
+footer #callservice{
+	margin:0 auto;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	width:33%;
+	height:130px;
+}
+
+footer li{
+	list-style:none;
+	margin-top: 5px;
+	font-size:0.7em;
+}
+footer a{
+	text-decoration:none;
+	color:black;
+}

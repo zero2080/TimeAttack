@@ -1,0 +1,22 @@
+@charset "UTF-8";
+#join_frm{
+	background:white;
+	font-family: sans-serif;
+	position:relative;
+	height:300px;
+	overflow:hidden;
+}
+.box{
+	width:600px;
+	position: absolute;
+	top:50%;
+	left:55%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	border-radius: 10px;
+}
+.box input {
+	height: 25px;
+	border-radius:10px;
+	
+}
