@@ -10,7 +10,7 @@ CREATE TABLE ADMIN (AID VARCHAR2(20) PRIMARY KEY,
                     ANICKNAME VARCHAR2(20),
                     ANAME VARCHAR2(20) NOT NULL);
                     
-                --���(�����)
+                --회원(멤버)
 CREATE TABLE MEMBER (MID VARCHAR2(20) PRIMARY KEY,      --멤버ID
                      MPW VARCHAR2(20) NOT NULL,         --비번
                      MNAME VARCHAR2(20) NOT NULL,       --이름

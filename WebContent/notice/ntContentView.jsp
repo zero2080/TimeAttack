@@ -16,8 +16,12 @@
 		width:800px;
 		margin:0 auto;
 	}
-	#ntContent{
+	#content{
 		height:600px;
+		width:100%;
+	}
+	#nContent{
+		height:500px;
 	}
 </style>
 <script>
@@ -33,12 +37,14 @@
 	<div id="content_wrap">
 		<table id="content" border=1>
 			<tr>
-				<th>No</th><td>${dto.nNumber }</td>
-				<th>작성자</th><td>${dto.aId }</td>
+				<th>No</th>
+				<td>${dto.nNumber }</td>
+				<th>작성자</th>
+				<td>${dto.aId }</td>
 			</tr>
 			<tr>
 				<th>글제목</th>
-				<td colspan="4">${dto.nTitle }</td>
+				<td colspan="3">${dto.nTitle }</td>
 			</tr>
 			
 			<tr>
@@ -50,7 +56,7 @@
 			<tr>
 				<th>첨부파일</th>
 				<td><a href="${conPath }/fileUpload/${dto.nFile }">${dto.nFile }</a></td>
-				<td colspan="4" id="button">
+				<td colspan="2" id="button">
 					<c:if test="${dto.aId eq admin.aid }">
 						<button onclick="reWrite()">수정하기</button>
 						<button onclick="del()">삭제하기</button>
