@@ -21,9 +21,12 @@ public class NoticeListView implements TAservice {
 		final int BLOCKSIZE= 5;
 		int startRow = (currentPage-1)*PAGESIZE+1;
 		int endRow = startRow+PAGESIZE-1;
+		
 		NoticeDao dao = NoticeDao.getInstance();
 		ArrayList<NoticeDto> list = dao.getList(startRow, endRow);
 		request.setAttribute("list", list);
+		
+		
 		int totCnt = dao.getTotCnt();
 		int pageCnt = (int)Math.ceil((double)totCnt/PAGESIZE);
 		int startPage = ((currentPage-1)/BLOCKSIZE)*BLOCKSIZE+1;

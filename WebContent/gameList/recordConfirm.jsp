@@ -14,4 +14,4 @@
 <body>
 	${confirmMsg }
 </body>
-</html>		
+</html>

@@ -9,42 +9,41 @@
 <title>Insert title here</title>
 <style>
 	#re_paging tr p{
-	
-	display:inline-block;
-	font-size:12px;
-	cursor:pointer;
-	width:20px;
-	height:20px;
-	font-weight:bold;
-	backfround-color:#aaa;
-	margin:0;
+		display:inline-block;
+		font-size:12px;
+		cursor:pointer;
+		width:20px;
+		height:20px;
+		font-weight:bold;
+		backfround-color:#aaa;
+		margin:0;
 	}
 	#re_paging tr p b{
 		color:#fff;
 	}
 	#reply table .re_con{
-	background-color:#eee;
+		background-color:#eee;
 	}
 	.re_date{
-	width:80px;
-}
+		width:80px;
+	}
 </style>
 <script>
-$('.paging').click(function(){
-	var tNumber = ${param.tNumber};
-	var mId = '${member.mid}';
-	var pageNum = $(this).attr('id');
-	var request = 'tNumber='+tNumber+'&pageNum='+pageNum;
-	$.ajax({
-		url:'${conPath}/ttrePly.do',
-		type:'get',
-		dataType:'html',
-		data:request,
-		success:function(data){
-			$('#reply').html(data);
-		}
-	}); 
-});
+	$('.paging').click(function(){
+		var tNumber = ${param.tNumber};
+		var mId = '${member.mid}';
+		var pageNum = $(this).attr('id');
+		var request = 'tNumber='+tNumber+'&pageNum='+pageNum;
+		$.ajax({
+			url:'${conPath}/ttrePly.do',
+			type:'get',
+			dataType:'html',
+			data:request,
+			success:function(data){
+				$('#reply').html(data);
+			}
+		}); 
+	});
 </script>
 </head>
 <body>
